@@ -7,17 +7,29 @@
     android:paddingStart="8dp"
     android:paddingEnd="8dp">
 
-    <TextView
+    <com.example.todo_list.TextGradient
         android:id="@+id/tvTodoTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Example"
-        android:textSize="26sp"
+        android:text="Examples"
+        android:textSize="56sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cbDone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvTodoTitle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Example"-->
+    <!--        android:textSize="26sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/cbDone"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="HardcodedText" />-->
 
     <CheckBox
         android:id="@+id/cbDone"

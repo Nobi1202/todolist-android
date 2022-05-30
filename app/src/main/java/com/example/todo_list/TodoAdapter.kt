@@ -1,7 +1,10 @@
 package com.example.todo_list
 
 import android.annotation.SuppressLint
+import android.graphics.Color
+import android.graphics.LinearGradient
 import android.graphics.Paint.STRIKE_THRU_TEXT_FLAG
+import android.graphics.Shader
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,6 +35,17 @@ class TodoAdapter(
             tvTodoTitle.text = curTodo.title
             cbDone.isChecked = curTodo.isChecked
             toggleStrikeThrough(tvTodoTitle, curTodo.isChecked)
+
+//            val paint = tvTodoTitle.paint
+//            val width = paint.measureText(tvTodoTitle.text.toString())
+//            val textShader: Shader = LinearGradient(
+//                0f, 0f, width, tvTodoTitle.textSize, intArrayOf(
+//                    Color.parseColor("#10E0ED"),
+//                    Color.parseColor("#9E22E9")
+//                ), null, Shader.TileMode.CLAMP
+//            )
+//
+//            tvTodoTitle.paint.shader = textShader
 
             cbDone.setOnCheckedChangeListener { _, isChecked ->
                 toggleStrikeThrough(tvTodoTitle, isChecked)
